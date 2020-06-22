@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#000000" />
+    <title>title - title - title</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <a href="" target="_blank">
+        <img class="logo" src="./assets/Logo.jpg" alt="Client-Logo" />
+      </a>
+      <h1 class="title" long-title="- title Project">title</h1>
+      <svg class="burgerMenu" id="burgerMenu" height="30px" viewBox="0 -53 384 384" width="30px" xmlns="http://www.w3.org/2000/svg">
+        <path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+        <path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+        <path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/>
+      </svg>
+      <ul id="menu" class="menu">
+        <li >
+          <a href="#" onclick="toggleMenu()">Meet the BM</a>
+        </li>
+        <li>
+          <a href="#artGallery" onclick="toggleMenu()">art Gallery</a>
+        </li>
+        <li>
+          <a href="#breakingNews" onclick="toggleMenu()">breakingNews</a>
+        </li>
+        <li>
+          <a href="#title" onclick="toggleMenu()">title</a>
+        </li>
+        <li>
+          <a href="#activities" onclick="toggleMenu()">activities</a>
+        </li>
+      </ul>
+    </header>
+    <div class="content">
+      <ul class="part">
+        <div style="display:flex; flex-direction: column; align-items: center; justify-content: center;">
+          <h2 style="text-align: center;">number 1</h2>
+          <p style="text-align: center;"></p>slkmsdf skfmls mlsdkfm lkmsdlfk mllksdmf lmlsddm lkmslkdf mlskmdf lksmf k</p>
+          <p style="font-size: 16px; text-align: start;">Curated by: </p>
+        </div>
+        <li class="itemPart1">
+          <h3>name</h3>
+          <p>description</p>
+        </li>
+        <li class="itemPart1">
+          <h3>name</h3>
+          <p>description</p>
+        </li>
+        <li class="itemPart1">
+          <h3>name</h3>
+          <p>description</p>
+        </li>
+        <li class="itemPart1">
+          <h3>name</h3>
+          <p>description</p>
+        </li>
+        <li class="itemPart1">
+          <h3>name</h3>
+          <p>description</p>
+        </li>
+        <li class="itemPart1">
+          <h3>name</h3>
+          <p>description</p>
+        </li>
+        <li class="itemPart1">
+          <h3>name</h3>
+          <p>description</p>
+        </li>
+        <li class="itemPart1">
+          <h3>name</h3>
+          <p>description</p>
+        </li>
+      </ul>
+      <div id="artGallery"></div>
+      <div class="partPdf" >
+        <h2>Atr Gallery:</h2>
+        <ul class="artRoller" id="artRoller">
+          <li class="artItem">
+            <img class="artContent" src="./assets/Theo.jpg" alt="first-art-image" id="Theo"/>
+            <p style="font-size: 16px;">by: name1</p>
+          </li>
+          <li class="artItem">
+            <img class="artContent" src="./assets/Noa.jpg" alt="first-art-image" id="Noa"/>
+            <p style="font-size: 16px;">by: name2</p>
+          </li>
+        </ul>
+      </div>
+      <div id="breakingNews"></div>
+
+      <div class="videoSection partPdf" >
+        <h2>video title:</h2>
+        <p>by: name</p>
+        <div class="news">
+          <iframe  width="560" height="315" style="max-width: 100%" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div id="title"></div>
+
+      <div class="partPdf" >
+        <h2>title:</h2>
+        <p>by: names</p>
+        <img class="artContent artItem tr" src="./assets/" alt="first-art-image" id="hol"/>
+      </div>
+      <div id="activities"></div>
+
+      <div  class="partPdf">
+        <h2>Activities:</h2>
+        <p>by: name</p>
+        <ul class="activities" >
+          <li class="artItem">
+            <img class="artContent" src="./assets/-page-001.jpg" alt="first-art-image" id="act1"/>
+              <button
+              onclick="download('wordsearch', './assets/-page-001.jpg')"
+              >Download!</button>
+          </li>
+          <li class="artItem">
+            <img class="artContent" src="./assets/Document-page-001.jpg" alt="first-art-image" id="act2"/>
+              <button 
+              onclick="download('crossword', './assets/Document-page-001.jpg')"
+              >Download!</button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="modal" id="modal">
+      <img class="modal-content" src="" alt="" id="modalContent"/>
+    </div>
+    <div class="modal" id="modal2">
+      <button class="prev" onclick="prev()"><</button>
+      <img class="modal-content d2323" src="" alt="" id="modalContent2"/>
+      <button class="next" onclick="next()">></button>
+
+    </div>
+
+    <footer>
+    </footer>
+
+    <script src='./scripts.js'></script>
+  </body>
+</html>
